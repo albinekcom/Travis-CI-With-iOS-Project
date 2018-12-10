@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Travis_CI_With_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dR7-eM-RNp">
+                                <rect key="frame" x="147.5" y="88" width="80" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="First Value Text Field"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Yrk-5K-d3q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6YA-aG-YbD">
+                                <rect key="frame" x="147.5" y="178" width="80" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Second Value Text Field"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="W4A-UH-LO5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h20-mq-vJY">
+                                <rect key="frame" x="182" y="140" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-8P-4rT">
+                                <rect key="frame" x="182" y="231" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-Gy-yjB">
+                                <rect key="frame" x="117.5" y="272" width="140" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Results Text Field">
+                                    <accessibilityTraits key="traits" summaryElement="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="b7G-2y-dQR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-0T-YY5">
+                                <rect key="frame" x="155.5" y="336" width="64" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Calculate Button"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igj-aZ-cdB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6YA-aG-YbD" firstAttribute="top" secondItem="h20-mq-vJY" secondAttribute="bottom" constant="17" id="7wB-Zo-VqT"/>
+                            <constraint firstItem="dR7-eM-RNp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GBk-8Y-Q3N"/>
+                            <constraint firstItem="h7T-Gy-yjB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gp2-5T-uwE"/>
+                            <constraint firstItem="vSQ-8P-4rT" firstAttribute="top" secondItem="6YA-aG-YbD" secondAttribute="bottom" constant="23" id="LmS-Yp-apf"/>
+                            <constraint firstItem="rFC-0T-YY5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PVa-E6-uMs"/>
+                            <constraint firstItem="dR7-eM-RNp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="UiL-p9-grw"/>
+                            <constraint firstItem="6YA-aG-YbD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VWm-oR-Yoe"/>
+                            <constraint firstItem="rFC-0T-YY5" firstAttribute="top" secondItem="h7T-Gy-yjB" secondAttribute="bottom" constant="34" id="YVi-Mt-rZ4"/>
+                            <constraint firstItem="vSQ-8P-4rT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zkb-9y-BrL"/>
+                            <constraint firstItem="h20-mq-vJY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ejE-yM-KfF"/>
+                            <constraint firstItem="h20-mq-vJY" firstAttribute="top" secondItem="dR7-eM-RNp" secondAttribute="bottom" constant="22" id="h6Y-vK-NR5"/>
+                            <constraint firstItem="h7T-Gy-yjB" firstAttribute="top" secondItem="vSQ-8P-4rT" secondAttribute="bottom" constant="20" id="oLd-NY-ssX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstValueTextField" destination="dR7-eM-RNp" id="fM9-k1-Hht"/>
+                        <outlet property="resultsTextField" destination="h7T-Gy-yjB" id="0Nu-aI-Nfz"/>
+                        <outlet property="secondValueTextField" destination="6YA-aG-YbD" id="LmC-NV-4KP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
